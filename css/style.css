@@ -146,6 +146,8 @@ nav > ul > li > a {
 #cb2 {
   background-color: #000000;
 }
+
+
 @keyframes color-change {
   0% {fill: #edc655;}
   50% {fill: #fcffad;}
@@ -171,7 +173,12 @@ nav > ul > li > a {
 #uidesign a {
     display: block;
   margin-top: 15px}
-
+#illustration img {
+  margin-top: 50px
+}
+#Belmont img {
+  margin-top: 50px;
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -208,7 +215,8 @@ Medium devices (640px and larger)
 }
 #aboutme h3 { margin-top: 0;}
       }
-      /* ==============================
+
+/* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
