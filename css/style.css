@@ -8,10 +8,9 @@ Secondary Color (Green): #489c79;
 }
 header {
   background-color: #F8F3F0;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 25px;
   position: relative;
-box-shadow:  0px 4px 15px 0px rgba(255, 126, 50, 0.5);
+  box-shadow:  0px 4px 15px 0px rgba(255, 126, 50, 0.5);
 }
 body {
   background-color: #ffffff;
@@ -94,23 +93,51 @@ a:active { /* selected link */
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 .logo {
-  max-width: 250px;
+  max-width: 150px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 30px;
 }
+
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+
 }
-nav > ul > li {
-  display: inline-block;
-}
+
 nav > ul > li > a {
-  padding: 0 15px;
+  padding: 0px 15px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
   color: #4a4a4a;
+  float: left;
+}
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 20px;
+}
+.navtoggle.responsive li  {
+  display: block;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: inline-block;
+  padding: 5px 0px;
+  border-top: .5px solid rgba(255,127,80,0.5);
+  border-bottom: .5px solid rgba(255,127,80,0.5);
+}
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 #hero {
   text-align: center;
@@ -179,13 +206,15 @@ nav > ul > li > a {
 #Belmont img {
   margin-top: 50px;
 }
+
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
-      height: 100px;
+    height: 100px;
     padding: 20px 0 13px;
   }
   nav {
@@ -193,6 +222,18 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 4px;
     font-size: 18px;
+  }
+  nav > ul {
+    margin:1em 0;
+  }
+  nav > ul > li {
+    display: inline-block;
+  }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+    display: none;
   }
   .logo {
     width: 240px;
