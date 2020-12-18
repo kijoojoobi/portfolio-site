@@ -11,7 +11,7 @@ header {
   background-color: #f8f3f0;
   padding: 10px 0 25px;
   position: relative;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1) ;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -131,7 +131,8 @@ nav > ul > li > a {
   float: left;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -176,7 +177,6 @@ nav > ul > li > a {
 #kijoophoto2 {
   margin-bottom: 30px;
 }
-
 
 .center {
   display: block;
@@ -282,22 +282,15 @@ Medium devices (640px and larger)
     margin-top: 4px;
     font-size: 18px;
   }
-  nav > ul {
-    margin: 1em 0;
-  }
+  nav > ul { margin: 1em 0; }
 
-  nav > ul > li {
-    display: inline-block;
-  }
-  .navtoggle li:not(:last-child) {
-    display: none;
-  }
-  .navtoggle li:not(:last-child) {
-    display: inline-block;
-  }
-  .navtoggle li:last-child {
-    display: none;
-  }
+  nav > ul > li { display: inline-block; }
+
+  .navtoggle li:not(:last-child) { display: none; }
+
+  .navtoggle li:not(:last-child) { display: inline-block; }
+
+  .navtoggle li:last-child { display: none; }
 
   .logo {
     width: 240px;
@@ -305,26 +298,22 @@ Medium devices (640px and larger)
     float: left;
   }
 
-  #hero span {
-  display: block;
-  }
+  #hero span { display: block; }
 
-.col-md-6 {
-      width: 50%;
-  }
+  .col-md-6 { width: 50%; }
 
-[class*="col-"] {
-      float: left;
-  }
+  [class*="col-"] { float: left; }
 
-.row::after {
-      content: "";
-      clear: both;
-      display: table;
-  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table; }
 
-  #aboutme h3 { margin-top: 0;
+  #aboutme h3 {
+    margin-top: 0;
   }
+}
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
