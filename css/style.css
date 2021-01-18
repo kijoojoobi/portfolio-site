@@ -118,6 +118,7 @@ a:active { /* selected link */
   font-size:36px !important;
   font-family: 'antic didone', serif;
   font-weight:500;
+  color:black;
 }
 
 nav > ul {
