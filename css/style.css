@@ -115,7 +115,6 @@ a:active { /* selected link */
   max-width: 150px;
   display: block;
   margin-left: 30px;
-  transform:scale(1.01);
 }
 
 nav > ul {
